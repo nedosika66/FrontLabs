@@ -1,0 +1,103 @@
+@use 'variables' as *;
+@use 'mixins' as *;
+
+@include respond-to('tablet') {
+    .nav-grid {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+
+    .stats-row {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .sliders-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .chart-list {
+        gap: 30px;
+    }
+
+    .credits-section {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+
+@include respond-to('mobile') {
+    .hero-title {
+        font-size: 2em;
+    }
+
+    .hero-subtitle {
+        font-size: 1em;
+    }
+
+    .app-header {
+        padding: 10px;
+    }
+
+    .top-nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .dialog-card {
+        padding: 15px;
+    }
+
+    .action-buttons {
+        flex-direction: column;
+        width: 100%;
+        gap: 10px;
+    }
+
+    .btn-edit {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .btn-danger {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .btn-primary {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .btn-secondary {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .delete-form {
+        width: 100%;
+        margin: 0;
+    }
+
+    .data-table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+
+    .availability-table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+
+    .song-table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+
+    .search-form {
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Аналітика - Музична Лабораторія</title>
+    <link rel="stylesheet" href="style/main.css">
+</head>
+<body>
+    <header class="global-header">
+    <nav class="global-nav">
+        <a href="index.html" class="nav-link">Головна</a>
+        <a href="song_list.html" class="nav-link">Пісні</a>
+        <a href="artist_list.html" class="nav-link">Артисти</a>
+        <a href="analytics.html" class="nav-link">Аналітика</a>
+        <a href="users.html" class="nav-link">Користувачі</a>
+    </nav>
+
+    <div class="header-actions">
+        <a href="login.html" class="btn-secondary">Увійти</a>
+    </div>
+</header>
+
+    <main class="dashboard-container">
+
+        <header class="page-header">
+            <h2 class="page-title">Аналітика</h2>
+        </header>
+
+        <section class="filter-card">
+            <form action="#" method="get" class="filter-form">
+                
+                <div class="filter-select-group">
+                    <label class="filter-label" for="filterTypeSelect">Фільтрувати за:</label>
+                    <select name="filter_type" id="filterTypeSelect" class="main-select">
+                        <option value="year" selected>Роками випуску</option>
+                        <option value="genre">Жанром</option>
+                        <option value="country">Країною виконавця</option>
+                    </select>
+                </div>
+
+                <div class="filter-section active-filter" id="yearSection">
+                    <div class="sliders-grid">
+                        <div class="slider-group">
+                            <div class="slider-label">
+                                <span class="slider-value">1950 - 2026</span>
+                            </div>
+                            <input type="range" name="min_year" min="1950" max="2026" value="1990" class="range-input">
+                        </div>
+                        <div class="slider-group">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="filter-section hidden-filter" id="genreSection">
+                    <select name="genre" class="secondary-select">
+                        <option value="" disabled selected>-- Оберіть жанр --</option>
+                        <option value="hiphop">Hip-Hop</option>
+                        <option value="rock">Rock</option>
+                        <option value="pop">Pop</option>
+                    </select>
+                </div>
+
+                <div class="filter-section hidden-filter" id="countrySection">
+                    <select name="country" class="secondary-select">
+                        <option value="" disabled selected>-- Оберіть країну --</option>
+                        <option value="usa">USA</option>
+                        <option value="ukraine">Україна</option>
+                        <option value="uk">UK</option>
+                    </select>
+                </div>
+                
+                <button type="submit" class="btn-apply">Застосувати</button>
+            </form>
+        </section>
+
+        <section class="chart-list">
+            <figure class="chart-card">
+                <figcaption class="chart-title">Розподіл за жанрами</figcaption>
+                <div class="chart-placeholder">
+                    <span class="placeholder-text">[ Графік Pie Chart ]</span>
+                </div>
+            </figure>
+            <figure class="chart-card">
+                <figcaption class="chart-title">Релізи по роках</figcaption>
+                <div class="chart-placeholder">
+                    <span class="placeholder-text">[ Графік Bar Chart ]</span>
+                </div>
+            </figure>
+            <figure class="chart-card">
+                <figcaption class="chart-title">Топ виконавців</figcaption>
+                <div class="chart-placeholder">
+                    <span class="placeholder-text">[ Графік Horizontal Bar Chart ]</span>
+                </div>
+            </figure>
+        </section>
+    </main>
+
+    <footer class="global-footer">
+        <p>© 2026 Музична Лабораторія. Усі права захищено.</p>
+    </footer>
+
+</body>
+</html>

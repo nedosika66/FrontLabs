@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Користувачі - Музична Лабораторія</title>
+    <link rel="stylesheet" href="style/main.css">
+</head>
+<body>
+
+    <header class="global-header">  
+    <nav class="global-nav">
+        <a href="index.html" class="nav-link">Головна</a>
+        <a href="song_list.html" class="nav-link">Пісні</a>
+        <a href="artist_list.html" class="nav-link">Артисти</a>
+        <a href="analytics.html" class="nav-link">Аналітика</a>
+        <a href="users.html" class="nav-link">Користувачі</a>
+    </nav>
+
+    <div class="header-actions">
+        <a href="login.html" class="btn-secondary">Увійти</a>
+    </div>
+</header>
+
+    <main class="main-container">
+    <section class="page-header">
+        <h1 class="page-title">Список користувачів</h1>
+        <a href="user_create.html" class="btn-primary">Створити користувача</a>
+    </section>
+
+    <section class="table-container">
+        <table class="data-table">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Username</th>
+                    <th>Роль (Role)</th>
+                    <th>Дії</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td><strong>nazar_admin</strong></td>
+                    <td><span class="role-badge badge-admin">Admin</span></td>
+                    <td>
+                        <a href="user_edit.html" class="action-link">Edit</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td><strong>test_user</strong></td>
+                    <td><span class="role-badge badge-regular">Regular</span></td>
+                    <td>
+                        <a href="user_edit.html" class="action-link">Edit</a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+</main>
+
+    <footer class="global-footer">
+        <p>© 2026 Музична Лабораторія. Усі права захищено.</p>
+    </footer>
+
+</body>
+</html>

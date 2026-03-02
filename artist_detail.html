@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Деталі Артиста - Музична Лабораторія</title>
+    <link rel="stylesheet" href="style/main.css">
+</head>
+<body>
+
+    <header class="global-header">
+    <nav class="global-nav">
+        <a href="index.html" class="nav-link">Головна</a>
+        <a href="song_list.html" class="nav-link">Пісні</a>
+        <a href="artist_list.html" class="nav-link">Артисти</a>
+        <a href="analytics.html" class="nav-link">Аналітика</a>
+        <a href="users.html" class="nav-link">Користувачі</a>
+    </nav>
+
+    <div class="header-actions">
+        <a href="login.html" class="btn-secondary">Увійти</a>
+    </div>
+</header>
+
+    <main>
+        <header class="artist-header">
+            <section class="artist-info">
+                <h1 class="artist-name">A$AP Rocky</h1>
+                <img src="image"/>
+                <div class="artist-meta">
+                    <span>Rakim Athelaston Mayers</span> &bull; 
+                    <span>USA</span> &bull; 
+                    <span>Нар. 1988</span>
+                </div>
+            </section>
+            
+            <section class="artist-stats">
+                <article class="stat-box">
+                    <span class="stat-num">4</span> Альбомів
+                </article>
+                <article class="stat-box">
+                    <span class="stat-num">68</span> Пісень
+                </article>
+            </section>
+        </header>
+
+        <section class="artist-albums-section">
+            <h2 class="section-title">Альбоми</h2>
+            <div class="album-grid">
+                <article class="album-card">
+                    <strong class="album-title">LONG.LIVE.A$AP</strong>
+                    <div class="album-year">2013</div>
+                </article>
+                <article class="album-card">
+                    <div class="album-icon">🎵</div>
+                    <strong class="album-title">AT.LONG.LAST.A$AP</strong>
+                    <div class="album-year">2015</div>
+                </article>
+            </div>
+        </section>
+
+        <section class="artist-songs-section">
+            <h2 class="section-title">Всі пісні</h2>
+            <table class="song-table">
+                <thead>
+                    <tr>
+                        <th>Назва</th>
+                        <th>Альбом</th>
+                        <th>Рік</th>
+                        <th>Тривалість</th>
+                        <th>Дії</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong class="song-title">Praise The Lord (Da Shine)</strong></td>
+                        <td>TESTING</td>
+                        <td>2018</td>
+                        <td>3:25</td>
+                        <td>
+                            <a href="album_detail.html" class="song-link">Деталі ➡</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><strong class="song-title">L$D</strong></td>
+                        <td>AT.LONG.LAST.A$AP</td>
+                        <td>2015</td>
+                        <td>3:58</td>
+                        <td>
+                            <a href="album_detail.html" class="song-link">Деталі ➡</a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <nav class="nav-actions">
+            <a href="index.html" class="btn-back">⬅ На головну</a>
+        </nav>
+    </main>
+
+    <footer class="global-footer">
+        <p>© 2026 Музична Лабораторія. Усі права захищено.</p>
+    </footer>
+
+</body>
+</html>

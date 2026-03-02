@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Деталі пісні - Музична Лабораторія</title>
+    <link rel="stylesheet" href="style/main.css">
+</head>
+<body>
+
+    <header class="global-header">
+    <nav class="global-nav">
+        <a href="index.html" class="nav-link">Головна</a>
+        <a href="song_list.html" class="nav-link">Пісні</a>
+        <a href="artist_list.html" class="nav-link">Артисти</a>
+        <a href="analytics.html" class="nav-link">Аналітика</a>
+        <a href="users.html" class="nav-link">Користувачі</a>
+    </nav>
+
+    <div class="header-actions">
+        <a href="login.html" class="btn-secondary">Увійти</a>
+    </div>
+</header>
+
+    <main class="detail-container">
+        <nav class="top-nav">
+            <a href="songs.html" class="btn-back">← Назад до списку</a>
+        </nav>
+
+        <header class="song-header">
+            <h1 class="song-title">Magnolia</h1>
+            <h3 class="song-artist">
+                Виконавець: 
+                <a href="artist_detail.html" class="artist-link">Playboi Carti</a>
+            </h3>
+        </header>
+
+        <section class="song-meta">
+            <div class="meta-item"><strong class="meta-label">Альбом:</strong> Playboi Carti</div>
+            <div class="meta-item"><strong class="meta-label">Жанр:</strong> Hip-Hop</div>
+            <div class="meta-item"><strong class="meta-label">Рік:</strong> 2017</div>
+            <div class="meta-item"><strong class="meta-label">Тривалість:</strong> 3:01</div>
+        </section>
+
+        <hr class="divider">
+
+        <section class="audio-stats-section">
+            <h4 class="section-subtitle">Аудіо Характеристики:</h4>
+            <div class="stats-grid">
+                <article class="stat-card">
+                    <div class="stat-label">BPM</div>
+                    <div class="stat-value">163</div>
+                </article>
+                <article class="stat-card">
+                    <div class="stat-label">Key (Тональність)</div>
+                    <div class="stat-value">Am</div>
+                </article>
+                <article class="stat-card">
+                    <div class="stat-label">Danceability</div>
+                    <div class="stat-value">0.79</div>
+                </article>
+                <article class="stat-card">
+                    <div class="stat-label">Energy</div>
+                    <div class="stat-value">0.71</div>
+                </article>
+            </div>
+        </section>
+
+        <section class="lyrics-section">
+            <h4 class="section-subtitle">Текст пісні:</h4>
+            <article class="lyrics-box">
+                In New York I milly rock, hide it in my sock
+                Used to sell rock, hide it in my sock
+                Used to sell rock, hide it in my sock
+                ...
+            </article>
+        </section>
+
+        <hr class="divider">
+
+        <section class="credits-section">
+            <div class="credits-block">
+                <h4 class="section-subtitle">За участі (Feat):</h4>
+                <ul class="credits-list">
+                    <li class="empty-list">Немає</li>
+                </ul>
+            </div>
+            <div class="credits-block">
+                <h4 class="section-subtitle">Продюсери:</h4>
+                <ul class="credits-list">
+                    <li>Pi'erre Bourne</li>
+                </ul>
+            </div>
+        </section>
+
+        <hr class="divider">
+
+        <section class="availability-section">
+            <h4 class="section-subtitle">Доступність на платформах:</h4>
+            <table class="availability-table">
+                <thead>
+                    <tr>
+                        <th>Платформа</th>
+                        <th>Статус</th>
+                        <th>Посилання</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Spotify</td>
+                        <td><span class="status-available">✔ Доступно</span></td>
+                        <td><a href="#" class="platform-link">Перейти ↗</a></td>
+                    </tr>
+                    <tr>
+                        <td>Apple Music</td>
+                        <td><span class="status-unavailable">✖ Недоступно</span></td>
+                        <td>-</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section class="action-buttons">
+            <a href="song-edit.html" class="btn-edit">✏ Редагувати</a>
+            
+            <form action="#" method="get" class="delete-form">
+                <button type="submit" class="btn-danger">🗑 Видалити</button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="global-footer">
+        <p>© 2026 Музична Лабораторія. Усі права захищено.</p>
+    </footer>
+
+</body>
+</html>

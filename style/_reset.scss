@@ -1,0 +1,43 @@
+// _reset.scss
+html, body, main, header, nav, section, article, figure, figcaption, 
+h1, h2, h3, h4, h5, h6, p, ul, li, table, form, fieldset, legend {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+main, header, nav, section, article, figure, figcaption {
+    display: block;
+}
+
+ul {
+    list-style: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+body, main, header, nav, section, article, div, input, button, select {
+    box-sizing: inherit;
+}
+
+a {
+    color: #ffffff !important; 
+    text-decoration: none;
+    transition: color 0.3s ease;
+
+    &:visited {
+        color: #ffffff !important;
+    }
+
+    &:hover {
+        color: #ff4d4d !important; 
+        text-decoration: underline;
+    }
+}

@@ -1,0 +1,27 @@
+// _mixins.scss
+@use 'variables' as *;
+
+@mixin card-base {
+    background: $color-white;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px $color-shadow-medium;
+    padding: 20px;
+}
+
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin respond-to($breakpoint) {
+    @if $breakpoint == 'tablet' {
+        @media (max-width: 768px) { 
+            @content; 
+        }
+    } @else if $breakpoint == 'mobile' {
+        @media (max-width: 480px) { 
+            @content; 
+        }
+    }
+}
